@@ -1,0 +1,25 @@
+<html>
+    <body>        
+        <label>1st Number:</label>
+        <input type="text" name="firstnumber" id="firstnumber"/>
+        </br></br>
+        <label>2nd Number:</label>
+        <input type="text" name="secondnumber" id="secondnumber"/>
+        </br></br>
+        <input type="button" onClick="multiply(document.getElementById('firstnumber').value, document.getElementById('secondnumber').value)" value="Multiply"/>
+        <input type="button" onClick="divide(document.getElementById('firstnumber').value, document.getElementById('secondnumber').value)" value="Divide"/>
+         
+        <script>
+            function multiply(first_number, second_number)
+            {
+                document.write("The Result is:"+first_number*second_number);
+            }
+
+            function divide(first_number, second_number)
+            {
+                document.write("The Result is: "+first_number/second_number);
+            }
+        </script>
+
+    </body>
+</html>
