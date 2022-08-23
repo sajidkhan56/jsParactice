@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function BankAccount(title, balance = 0)
+            {
+                this.title = title;
+                this.account_number = Date.now();
+                this.balance = balance;
+
+                this.deposit = function (amount) {
+                    this.balance += amount; 
+                }
+
+                this.withdraw = (amount) => {
+                    this.balance -= amount;
+                }
+            }
+
+            obj = new BankAccount('sajid khan',1000);
+            obj.deposit(5000);
+            obj.withdraw(2000);
+            console.log(obj);
+
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
